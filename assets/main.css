@@ -1,0 +1,39 @@
+body {
+	background: rgb(255, 254, 237);
+	color: rgb(53, 53, 53);
+	font-family: sans-serif;
+}
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+.container > * + * {
+	padding-top: 1rem;
+}
+
+.input_container > * {
+	padding: 0.25rem;
+}
+
+.input_container > * + * {
+	margin-left: 0.25rem;
+}
+
+li + li {
+	padding-top: 0.5rem;
+}
+
+li input + label {
+	margin-left: 0.25rem;
+}
+
+:checked + label {
+	text-decoration: line-through;
+	color: grey;
+}
